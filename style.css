@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+     font-family: "Roboto", sans-serif;
+     line-height: 1.5;
+}
+nav{
+     width: 100%;
+     background: #fff;
+     box-shadow: 0 5px 5px 0 rgba(0,0,0,0.5);
+}
+.nav-center{
+      max-width: 1170px;
+      margin: 0 auto;
+      padding: 14px 16px;
+}
+.nav-header{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+.nav-header h1{
+     font-weight: 500;
+     font-size: 1.8em;
+}
+.nav-header h1 span.coding{
+      text-transform: capitalize;
+      letter-spacing: 4px;
+      display: inline-block;
+      color: #242424;
+      text-shadow:  1px 3px 5px #333;
+}
+.nav-header h1 span.addict{
+      text-transform: capitalize;
+      letter-spacing: 4px;
+      color: #66AFE5;
+      text-shadow: 1px 3px 5px #333;
+}
+.toggle_btn{
+     border: none;
+     background-color: transparent;
+     color: #66AFE5;
+     font-size: 2em;
+     cursor: pointer;
+     transition: all 0.3s linear;
+}
+.toggle_btn:hover{
+     transform: rotate(90deg);
+}
+.social-icons{
+      display: none;
+}
+.links{
+     height: auto;
+     padding-top: 20px;
+     display: none;
+}
+.show-links{
+    display: block;
+}
+.links a{
+    display: block;
+    text-decoration: none;
+    padding: 10px 0px;
+    color: #537AA3;
+    font-size: 18px;
+    letter-spacing: 4px;
+    transition: all 0.3s linear;
+}
+.links a:hover{
+      padding-left: 1.25rem;
+      background-color: #66AFE5;
+      color: #000;
+}
+
+@media screen and (min-width: 980px){
+     .nav-center{
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding: 10px 0;
+     }
+    
+     .toggle_btn{
+         display: none;
+     }
+     .social-icons{
+         display: block;
+     }
+     .links{
+        padding: 0;
+     }
+     .links a{
+           display: inline-block;
+           margin: 0.5rem;
+     }
+     .links a:hover{
+        padding: 0;
+        background: none;
+        color: #537AA3;
+     }
+     .social-icons a{
+          display: inline-block;
+          color: #000;
+          padding: 12px 14px;
+          font-size: 18px;
+          transition: all 0.3s linear;
+     }
+     .social-icons a:hover{
+          opacity: 0.7;
+     }
+}
